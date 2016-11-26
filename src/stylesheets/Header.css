@@ -2,36 +2,10 @@
   outline: 1px solid blue;
 }
 
-header {
-  max-height: 3em;
-}
-
-.header-container {
-  display: block;
-  background-color: teal;
-}
-
-.header-element {
-  display: inline;
-}
-
-.header-clock {
-  background-color: yellow;
-  max-width: 20%;
-}
-
-.header-logo {
+.navbar-logo {
   height: 3em;
 }
 
-.float {
-  float: none;
-}
-
-.float-right {
-  float: right;
-}
-
-.float-left {
-  float: left;
+.white-text {
+  color: white;
 }
