@@ -4,7 +4,7 @@ class DateTime extends Component {
   render () {
     return (
       <div>
-        <p>{new Date().toDateString()}</p>
+        <p>{new Date().toString()}</p>
       </div>
     )
   }

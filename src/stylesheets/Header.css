@@ -6,3 +6,7 @@
 .text-header {
   font-size: 2em;
 }
+
+.clock span {
+  display: none;
+}
