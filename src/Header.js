@@ -6,12 +6,11 @@ class Header extends Component {
   render () {
     return (
       <header className='Header'>
-        <div classname='header-container'>
-          <img className='brand-logo header-element float-left' src={require('./images/layout/dbc-logo-new.png')} alt='brand-logo' />
-          <div className='header-clock float'>
+        <div className='header-container'>
+          <img className='header-element header-logo' src={require('./images/layout/dbc-logo-new.png')} alt='brand-logo' />
+          <div className='header-element header-clock'>
             <Clock />
           </div>
-          <img className='brand-logo header-element float-right' src={require('./images/layout/dbc-logo-new.png')} alt='brand-logo' />
         </div>
       </header>
     )

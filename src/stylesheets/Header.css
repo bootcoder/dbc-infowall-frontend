@@ -2,8 +2,13 @@
   outline: 1px solid blue;
 }
 
+header {
+  max-height: 3em;
+}
+
 .header-container {
   display: block;
+  background-color: teal;
 }
 
 .header-element {
@@ -15,7 +20,7 @@
   max-width: 20%;
 }
 
-.brand-logo {
+.header-logo {
   height: 3em;
 }
 
