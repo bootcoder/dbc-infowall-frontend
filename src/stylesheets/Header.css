@@ -1,7 +1,8 @@
 .navbar-logo {
+  padding: 2% 0% 0% 2%;
   height: 3em;
 }
 
-.white-text {
-  color: white;
+.text-header {
+  font-size: 2em;
 }

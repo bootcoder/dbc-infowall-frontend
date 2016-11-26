@@ -12,7 +12,6 @@
     "react": "^15.3.2",
     "react-bootstrap": "^0.30.7",
     "react-clock": "^1.0.5",
-    "react-datetime": "^2.7.5",
     "react-dom": "^15.3.2"
   },
   "scripts": {
