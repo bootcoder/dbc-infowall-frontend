@@ -4,7 +4,7 @@ import './stylesheets/CardContainer.css'
 class CardContainer extends Component {
   render () {
     const getNames = function () {
-      return 'My Name is function'
+      return 'I can call a function'
     }
     return (
       <div className='CardContainer gray-bg full-screen-height'>
