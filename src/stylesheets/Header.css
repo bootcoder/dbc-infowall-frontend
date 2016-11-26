@@ -1,0 +1,32 @@
+* {
+  outline: 1px solid blue;
+}
+
+.header-container {
+  display: block;
+}
+
+.header-element {
+  display: inline;
+}
+
+.header-clock {
+  background-color: yellow;
+  max-width: 20%;
+}
+
+.brand-logo {
+  height: 3em;
+}
+
+.float {
+  float: none;
+}
+
+.float-right {
+  float: right;
+}
+
+.float-left {
+  float: left;
+}
