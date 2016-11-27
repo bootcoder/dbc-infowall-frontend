@@ -5,7 +5,6 @@ import CardDescription from './CardDescription'
 import CardFooter from './CardFooter'
 
 import Col from 'react-bootstrap/lib/Col'
-import Row from 'react-bootstrap/lib/Row'
 
 import './stylesheets/Card.css'
 
@@ -15,7 +14,7 @@ class EventCard extends Component {
     console.log('in EventCard')
     const eventData = this.props.eventData
     return (
-      <Col xs={1} md={3} className='EventCard Card'>
+      <Col xs={12} md={3} className='Card sb-dark no-pad gray-text relative-div rounded-corners rounded-bottom'>
         <CardTitle title={eventData.title} />
         <CardDescription description={eventData.description} />
         <CardFooter eventData={eventData} />

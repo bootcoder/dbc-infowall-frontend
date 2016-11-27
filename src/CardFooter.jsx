@@ -1,16 +1,39 @@
 import React, { Component } from 'react'
 
+import Col from 'react-bootstrap/lib/Col'
+import Row from 'react-bootstrap/lib/Row'
+
+import CardDate from './CardDate'
+import CardOrganizer from './CardOrganizer'
+import CardImage from './CardImage'
+
 class CardFooter extends Component {
+  setCardType (card_type) {
+    switch (card_type) {
+      case 'student':
+        return 'bg-yellow'
+      case 'calendar':
+        return 'bg-gray'
+      case 'today':
+        return 'bg-light-green'
+    }
+  }
   render () {
-    console.log(this.props.eventData)
-    console.log('in CardFooter')
-    const eventData = this.props.eventData
+    var props = this.props.eventData
     return (
-      <div className='CardFooter'>
-        <p>{eventData.schedule}</p>
-        <p>{eventData.organizer}</p>
-        <img className='img-headshot' src={require('./images/staff/' + eventData.img_url)} alt='staff-headshot' />
-      </div>
+      <Col sm={12} lg={12} className={this.setCardType(props.card_type) + ' absolute-bottom height-60px rounded-bottom'}>
+        <Row>
+          <Col sm={3} lg={3} className='black-text'>
+            <CardDate schedule={props.schedule} />
+          </Col>
+          <Col sm={3} lg={6} className='black-text'>
+            <CardOrganizer eventData={props} />
+          </Col>
+          <Col sm={3} lg={3} className='black-text no-pad'>
+            <CardImage img_url={props.img_url} />
+          </Col>
+        </Row>
+      </Col>
     )
   }
 }

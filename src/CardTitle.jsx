@@ -4,7 +4,7 @@ class CardTitle extends Component {
   render () {
     const title = this.props.title
     return (
-      <div className='CardTitle text-white text-center'>
+      <div className='CardTitle text-center text-teal'>
         <h4>{title}</h4>
       </div>
     )

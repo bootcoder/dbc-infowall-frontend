@@ -6,7 +6,7 @@ class CardDescription extends Component {
     console.log('in CardDescription')
     const description = this.props.description
     return (
-      <div className='CardDescription text-white text-center'>
+      <div className='CardDescription text-center'>
         <p>{description}</p>
       </div>
     )
