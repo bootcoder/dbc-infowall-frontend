@@ -10,21 +10,21 @@ import './stylesheets/Card.css'
 
 class EventCard extends Component {
   render () {
-    console.log(this.props.eventData)
+    console.log(this.props.cardData)
     console.log('in EventCard')
-    const eventData = this.props.eventData
+    const cardData = this.props.cardData
     return (
       <Col xs={12} md={3} className='Card sb-dark no-pad gray-text relative-div rounded-corners rounded-bottom'>
-        <CardTitle title={eventData.title} />
-        <CardDescription description={eventData.description} />
-        <CardFooter eventData={eventData} />
+        <CardTitle title={cardData.title} />
+        <CardDescription description={cardData.description} />
+        <CardFooter cardData={cardData} />
       </Col>
     )
   }
 }
 
 EventCard.propTypes = {
-  eventData: React.PropTypes.shape({
+  cardData: React.PropTypes.shape({
     id: React.PropTypes.number.isRequired,
     title: React.PropTypes.string.isRequired,
     description: React.PropTypes.string,

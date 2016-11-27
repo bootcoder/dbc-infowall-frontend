@@ -10,8 +10,8 @@ class CardContainer extends Component {
     console.log('in CardContainer')
     return (
       <div className='CardContainer'>
-        {Object.values(this.props).map(function (eventData, idx) {
-          return <EventCard eventData={eventData} key={idx} />
+        {Object.values(this.props).map(function (cardData, idx) {
+          return <EventCard cardData={cardData} key={idx} />
         })}
       </div>
     )

@@ -11,7 +11,7 @@ class App extends Component {
     return (
       <div className='App'>
         <Header />
-        <Fetch url='https://dbc-infowall-api.herokuapp.com'>
+        <Fetch url='https://dbc-infowall-api.herokuapp.com/events.json'>
           <CardContainer />
         </Fetch>
       </div>

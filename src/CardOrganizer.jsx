@@ -4,8 +4,8 @@ import CardLocation from './CardLocation'
 
 class CardOrganizer extends Component {
   render () {
-    const organizer = this.props.eventData.organizer
-    const location = this.props.eventData.location
+    const organizer = this.props.cardData.organizer
+    const location = this.props.cardData.location
     return (
       <div className='text-center bold'>
         <CardLocation location={location} />
@@ -16,7 +16,7 @@ class CardOrganizer extends Component {
 }
 
 CardOrganizer.propTypes = {
-  eventData: React.PropTypes.shape({
+  cardData: React.PropTypes.shape({
     id: React.PropTypes.number,
     title: React.PropTypes.string,
     description: React.PropTypes.string,

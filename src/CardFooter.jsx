@@ -21,7 +21,7 @@ class CardFooter extends Component {
     }
   }
   render () {
-    var props = this.props.eventData
+    var props = this.props.cardData
     return (
       <Col sm={12} lg={12} className={this.setCardType(props.card_type) + ' absolute-bottom height-60px rounded-bottom'}>
         <Row>
@@ -29,7 +29,7 @@ class CardFooter extends Component {
             <CardDate schedule={props.schedule} />
           </Col>
           <Col sm={3} lg={6} className='black-text'>
-            <CardOrganizer eventData={props} />
+            <CardOrganizer cardData={props} />
           </Col>
           <Col sm={3} lg={3} className='black-text no-pad'>
             <CardImage img_url={props.img_url} />
@@ -41,7 +41,7 @@ class CardFooter extends Component {
 }
 
 CardFooter.propTypes = {
-  eventData: React.PropTypes.shape({
+  cardData: React.PropTypes.shape({
     id: React.PropTypes.number.isRequired,
     title: React.PropTypes.string.isRequired,
     description: React.PropTypes.string,
