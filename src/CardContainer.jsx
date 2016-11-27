@@ -1,18 +1,18 @@
 import React, { Component } from 'react'
 
+import EventCard from './EventCard'
+
 import './stylesheets/CardContainer.css'
 
 class CardContainer extends Component {
   render () {
     console.log(this.props)
     console.log('in CardContainer')
-    const getNames = function () {
-      return 'I can call a function'
-    }
     return (
       <div className='CardContainer gray-bg full-screen-height'>
-        <p>Hello From the card container</p>
-        <p>{getNames()}</p>
+        {Object.values(this.props).map(function (eventData, idx) {
+          return <EventCard eventData={eventData} key={idx} />
+        })}
       </div>
     )
   }
