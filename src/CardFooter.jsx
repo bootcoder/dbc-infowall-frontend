@@ -1,30 +1,21 @@
 import React, { Component } from 'react'
 
-import CardTitle from './CardTitle'
-import CardDescription from './CardDescription'
-import CardFooter from './CardFooter'
-
-import Col from 'react-bootstrap/lib/Col'
-import Row from 'react-bootstrap/lib/Row'
-
-import './stylesheets/Card.css'
-
-class EventCard extends Component {
+class CardFooter extends Component {
   render () {
     console.log(this.props.eventData)
-    console.log('in EventCard')
+    console.log('in CardFooter')
     const eventData = this.props.eventData
     return (
-      <Col xs={1} md={3} className='EventCard Card'>
-        <CardTitle title={eventData.title} />
-        <CardDescription description={eventData.description} />
-        <CardFooter eventData={eventData} />
-      </Col>
+      <div className='CardFooter'>
+        <p>{eventData.schedule}</p>
+        <p>{eventData.organizer}</p>
+        <img className='img-headshot' src={require('./images/staff/' + eventData.img_url)} alt='staff-headshot' />
+      </div>
     )
   }
 }
 
-EventCard.propTypes = {
+CardFooter.propTypes = {
   eventData: React.PropTypes.shape({
     id: React.PropTypes.number.isRequired,
     title: React.PropTypes.string.isRequired,
@@ -38,4 +29,4 @@ EventCard.propTypes = {
   })
 }
 
-export default EventCard
+export default CardFooter

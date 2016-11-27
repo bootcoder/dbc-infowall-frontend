@@ -2,6 +2,9 @@ import React, { Component } from 'react'
 
 import EventCard from './EventCard'
 
+import Col from 'react-bootstrap/lib/Col'
+import Row from 'react-bootstrap/lib/Row'
+
 import './stylesheets/CardContainer.css'
 
 class CardContainer extends Component {
@@ -9,7 +12,7 @@ class CardContainer extends Component {
     console.log(this.props)
     console.log('in CardContainer')
     return (
-      <div className='CardContainer gray-bg full-screen-height'>
+      <div className='CardContainer gray-bg full-screen-height '>
         {Object.values(this.props).map(function (eventData, idx) {
           return <EventCard eventData={eventData} key={idx} />
         })}

@@ -1,0 +1,23 @@
+.Card {
+  height: 300px;
+  width: 300px;
+  margin: 2%;
+  background: url('../images/layout/sb-pentagon.png');
+}
+
+.CardFooter {
+  height: 100px;
+  background-color: gray;
+}
+
+.CardTitle {
+  height: 50px;
+}
+
+.img-headshot {
+  max-height: 5em;
+}
+
+.CardDescription {
+  height: 150px;
+}
