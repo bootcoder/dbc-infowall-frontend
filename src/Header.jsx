@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 
 import Clock from 'react-clock'
 import DateTime from './DateTime'
-import UTCDateTime from './UTCDateTime'
 
 import './stylesheets/Header.css'
 
@@ -24,11 +23,6 @@ class Header extends Component {
               <DateTime />
             </Col>
           </Row>
-          {/* <Row>
-            <Col xs={1} md={12} className='text-white text-center text-header'>
-              <UTCDateTime />
-            </Col>
-          </Row> */}
       </nav>
     )
   }
