@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 
-import Col from 'react-bootstrap/lib/Col'
-
 class CardImage extends Component {
   render () {
     const img_url = this.props.img_url

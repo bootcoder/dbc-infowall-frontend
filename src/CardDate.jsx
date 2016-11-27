@@ -1,7 +1,5 @@
 import React, { Component } from 'react'
 
-import Col from 'react-bootstrap/lib/Col'
-
 class CardDate extends Component {
   giveDay (dateString) {
     return dateString.slice(0, 3)

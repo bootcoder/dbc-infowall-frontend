@@ -16,6 +16,8 @@ class CardFooter extends Component {
         return 'bg-gray'
       case 'today':
         return 'bg-light-green'
+      default:
+        return 'bg-gray'
     }
   }
   render () {
