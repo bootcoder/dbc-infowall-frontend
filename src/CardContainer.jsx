@@ -2,8 +2,6 @@ import React, { Component } from 'react'
 
 import EventCard from './EventCard'
 
-import './stylesheets/CardContainer.css'
-
 class CardContainer extends Component {
   render () {
     console.log(this.props)

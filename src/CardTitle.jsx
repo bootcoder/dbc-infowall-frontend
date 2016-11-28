@@ -5,7 +5,7 @@ class CardTitle extends Component {
     const title = this.props.title
     return (
       <div className='CardTitle text-center text-teal'>
-        <h4>{title}</h4>
+        <h5>{title}</h5>
       </div>
     )
   }
