@@ -7,9 +7,9 @@ class CardOrganizer extends Component {
     const organizer = this.props.cardData.organizer
     const location = this.props.cardData.location
     return (
-      <div className='text-center bold'>
+      <div className='pad-top-5px black-text text-center'>
         <CardLocation location={location} />
-        <p className='organizer-text'>{organizer}</p>
+        <p className='bold day-text no-bottom-margin pad-top-5px'>{organizer}</p>
       </div>
     )
   }

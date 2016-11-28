@@ -4,7 +4,7 @@ class CardLocation extends Component {
   render () {
     const location = this.props.location
     return (
-      <p className='pad-top-12P location-text'>{location}</p>
+      <p className='bold day-text no-bottom-margin'>{location}</p>
     )
   }
 }

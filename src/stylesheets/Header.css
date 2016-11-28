@@ -4,9 +4,17 @@
 }
 
 .text-header {
-  font-size: 2em;
+  font-size: 2.2em;
 }
 
 .clock span {
   display: none;
+}
+
+.header-clock-text {
+  padding-right: 2%;
+}
+
+.header-date-text {
+  padding-left: 12%;
 }

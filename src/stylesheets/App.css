@@ -165,19 +165,14 @@ height: 4em;
 }
 
 .date-text {
-  /*margin-left: .5rem;*/
-  /*margin-bottom: .6rem;*/
   font-size: .6em;
 }
 
 .day-text {
-  /*margin-left: .5rem;*/
-  /*margin-bottom: .6rem;*/
   font-size: .9em;
 }
 
 .organizer-text {
-  /*margin-left: .5rem;*/
   margin-bottom:  .6rem;
   margin-top: .6rem;
   font-size: .7em;
