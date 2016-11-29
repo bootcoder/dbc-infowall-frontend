@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 
 class CardDescription extends Component {
   render () {
-    console.log(this.props.description)
-    console.log('in CardDescription')
+    // console.log(this.props.description)
+    // console.log('in CardDescription')
     const description = this.props.description
     return (
       <div className='CardDescription text-center'>

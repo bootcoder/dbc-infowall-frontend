@@ -4,8 +4,8 @@ import EventCard from './EventCard'
 
 class CardContainer extends Component {
   render () {
-    console.log(this.props)
-    console.log('in CardContainer')
+    // console.log(this.props)
+    // console.log('in CardContainer')
     return (
       <div className='CardContainer'>
         {Object.values(this.props).map(function (cardData, idx) {
